@@ -102,6 +102,7 @@ function reduceVMTest(
   try {
     stack = vmTest.vm.vmStack().reverse();
   } catch (_e) {
+    console.log(e);
     dispatch.current({
       action: "setError",
       payload: new Error("Runtime error: Invalid stack"),
