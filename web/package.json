@@ -50,7 +50,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "preanalyze": "npm run map-build",
     "start": "react-scripts start",
-    "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
+    "build": "cross-env react-scripts build",
     "map-build": "react-scripts build",
     "postbuild": "node ./scripts/predeploy.js",
     "preserve-pwa": "npm run build ; ln -s build web-ide",
