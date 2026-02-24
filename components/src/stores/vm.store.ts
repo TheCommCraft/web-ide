@@ -101,7 +101,7 @@ function reduceVMTest(
   let stack: VmFrame[] = [];
   try {
     stack = vmTest.vm.vmStack().reverse();
-  } catch (_e) {
+  } catch (e) {
     console.log(e);
     dispatch.current({
       action: "setError",
