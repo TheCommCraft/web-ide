@@ -112,6 +112,14 @@ export const VM_BUILTINS: Record<string, VmBuiltin> = {
     returnType: "int",
     type: "function",
   },
+  "Math.random": {
+    func: (memory, _) => {
+      return Math.floor(Math.random() * 0xffff);
+    },
+    args: [],
+    returnType: "int",
+    type: "function",
+  }
   "Screen.init": {
     func: (_, __) => 0,
     args: [],
