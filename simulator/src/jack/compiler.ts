@@ -486,7 +486,11 @@ export class Compiler {
         call.name.span,
       );
     } else {
-      throw createError(`Class ${className} doesn't exist`, call.name.span);
+      console.warn(className);
+      console.warn(subroutineName);
+      console.warn(VM_BUILTINS);
+      console.warn(builtin);
+      throw createError(`Class ${className} doesn't exist. Or does it?`, call.name.span);
     }
   }
 
