@@ -431,6 +431,10 @@ export class Compiler {
     isMethod: boolean,
   ) {
     const builtin = VM_BUILTINS[`${className}.${subroutineName}`];
+    console.log(className);
+    console.log(subroutineName);
+    console.log(VM_BUILTINS);
+    console.log(builtin);
     if (builtin) {
       if (builtin.type == "method" && !isMethod) {
         throw createError(
