@@ -119,7 +119,7 @@ export const VM_BUILTINS: Record<string, VmBuiltin> = {
     args: [],
     returnType: "int",
     type: "function",
-  }
+  },
   "Screen.init": {
     func: (_, __) => 0,
     args: [],
