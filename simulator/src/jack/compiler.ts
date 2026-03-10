@@ -494,7 +494,6 @@ export class Compiler {
         `Class ${className} doesn't exist. Or does it?`,
         call.name.span,
       );
-
     }
   }
 
